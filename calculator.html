@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>simple calculator</h1>
+    <input type="number" id="num1" placeholder="enter 1st number">
+    <input type="number" id="num2" placeholder="enter 2nd number">
+    <br>
+    <button onclick="calculate(`+`)">+</button>
+    <button onclick="calculate(`-`)">-</button>
+    <button onclick="calculate(`*`)">*</button>
+    <button onclick="calculate(`/`)">/</button>
+
+    <script>
+        function calculator(operator){
+            let num1 = parseFloat(document.getElementById(`num1`).value);
+        let num2 = parseFloat(document.getElementById(`num2`).value);
+        let result;
+        }
+        if (isnan (num1))or (isnan (num2))
+            alert("please enter valid number");
+            return
+        
+        switch(oerator){
+            case`+`:
+            result = num1 + num2;
+            break;
+            switch(oerator)}
+            case`-`:
+            result = num1 - num2;
+            break;
+ 
+            switch(oerator){
+            case`*`:
+            result = num1 * num2;
+            break;
+ 
+            switch(oerator){
+            case`/`:
+            result = num1 / num2;
+            break;
+            default:
+                alert("invalid operator")
+                return;
+ 
+        }
+        alert("the result is :" + result)
+        }
+    </script>
+</body>
+</html>
